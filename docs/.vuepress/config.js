@@ -6,22 +6,68 @@ export default defineUserConfig({
   base: "/vue3-eltable-jsx-docs/",
   lang: 'en-US',
 
-  title: 'vue3-eltable-jsx-docs',
+  title: 'el-table-jsx文档',
   description: 'My first VuePress Site',
 
   theme: defaultTheme({
     logo: 'https://vuejs.press/images/hero.png',
-    navbar: [],
-    sidebar: [
+    navbar: [
       {
-        text: 'MTable',
-        link: '/components/MTable/README.md',
+        text: '指南',
+        link: "/guide/README.md",
       },
       {
-        text: 'Table',
-        link: '/components/Table/README.md',
-      },
+        text: '组件',
+        link: '/components/README.md'
+      }
     ],
+    sidebar: {
+      "/guide/": [
+        {
+          text: '为什么用el-table-jsx',
+          link: 'reason/README.md',
+        },
+        {
+          text: '使用方法',
+          link: 'use/README.md',
+        },
+      ],
+      "/components/": [
+        {
+          text: 'MTable',
+          link: 'MTable/README.md',
+        },
+        {
+          text: 'Table',
+          link: 'Table/README.md',
+        },
+        {
+          text: 'Form',
+          link: 'Form/README.md',
+        },
+        {
+          text: 'Pageinate',
+          link: 'Pageinate/README.md',
+        },
+        {
+          text: 'Dialog',
+          link: 'Dialog/README.md',
+        },
+        {
+          text: 'Descriptions',
+          link: 'Descriptions/README.md',
+        },
+        {
+          text: 'Tooltip',
+          link: 'Tooltip/README.md',
+        },
+      ],
+    },
+    markdown: {
+      extendMarkdown: md => {
+        md.use(require("markdown-it-disable-url-encode"));
+      }
+    }
   }),
 
   bundler: viteBundler(),
