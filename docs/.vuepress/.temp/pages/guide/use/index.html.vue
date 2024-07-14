@@ -1,7 +1,17 @@
 <template><div><h2 id="安装依赖" tabindex="-1"><a class="header-anchor" href="#安装依赖"><span>安装依赖</span></a></h2>
-<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="line">npm i el<span class="token operator">-</span>table<span class="token operator">-</span>jsx @vitejs<span class="token operator">/</span>plugin<span class="token operator">-</span>vue<span class="token operator">-</span>jsx</span>
+<CodeTabs id="3" :data='[{"id":"npm"},{"id":"yarn"}]' :active="0" tab-id="shell">
+<template #title0="{ value, isActive }">npm</template>
+<template #title1="{ value, isActive }">yarn</template>
+<template #tab0="{ value, isActive }">
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre class="language-bash"><code><span class="line"><span class="token function">npm</span> i <span class="token parameter variable">-D</span> el-table-jsx @vitejs/plugin-vue-jsx</span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div><h2 id="vite-config-js-引入插件" tabindex="-1"><a class="header-anchor" href="#vite-config-js-引入插件"><span>vite.config.js 引入插件</span></a></h2>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></template>
+<template #tab1="{ value, isActive }">
+<div class="language-bash line-numbers-mode" data-highlighter="prismjs" data-ext="sh" data-title="sh"><pre v-pre class="language-bash"><code><span class="line"><span class="token function">yarn</span> <span class="token function">add</span> <span class="token parameter variable">-D</span> el-table-jsx @vitejs/plugin-vue-jsx</span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div></div></div></template>
+</CodeTabs>
+<h2 id="vite-config-js-引入插件" tabindex="-1"><a class="header-anchor" href="#vite-config-js-引入插件"><span>vite.config.js 引入插件</span></a></h2>
 <div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> defineConfig <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vite"</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token keyword">import</span> vue <span class="token keyword">from</span> <span class="token string">"@vitejs/plugin-vue"</span><span class="token punctuation">;</span></span>
 <span class="line"><span class="token keyword">import</span> vueJsx <span class="token keyword">from</span> <span class="token string">"@vitejs/plugin-vue-jsx"</span><span class="token punctuation">;</span></span>

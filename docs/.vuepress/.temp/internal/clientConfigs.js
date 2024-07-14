@@ -5,6 +5,8 @@ import * as clientConfig3 from 'C:/Users/User/Desktop/table-jsx/vue3-eltable-jsx
 import * as clientConfig4 from 'C:/Users/User/Desktop/table-jsx/vue3-eltable-jsx-docs/node_modules/@vuepress/plugin-nprogress/lib/client/config.js'
 import * as clientConfig5 from 'C:/Users/User/Desktop/table-jsx/vue3-eltable-jsx-docs/node_modules/@vuepress/plugin-theme-data/lib/client/config.js'
 import * as clientConfig6 from 'C:/Users/User/Desktop/table-jsx/vue3-eltable-jsx-docs/node_modules/@vuepress/theme-default/lib/client/config.js'
+import * as clientConfig7 from 'C:/Users/User/Desktop/table-jsx/vue3-eltable-jsx-docs/docs/.vuepress/.temp/sass-palette/load-hope.js'
+import * as clientConfig8 from 'C:/Users/User/Desktop/table-jsx/vue3-eltable-jsx-docs/docs/.vuepress/.temp/md-enhance/config.js'
 
 export const clientConfigs = [
   clientConfig0,
@@ -14,4 +16,6 @@ export const clientConfigs = [
   clientConfig4,
   clientConfig5,
   clientConfig6,
+  clientConfig7,
+  clientConfig8,
 ].map((m) => m.default).filter(Boolean)

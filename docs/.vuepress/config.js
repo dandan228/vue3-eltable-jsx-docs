@@ -1,6 +1,7 @@
 import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
+import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
 
 export default defineUserConfig({
   base: "/vue3-eltable-jsx-docs/",
@@ -70,7 +71,12 @@ export default defineUserConfig({
     }
   }),
 
-  plugins: ['demo-container-v2'],
+  plugins: [
+    mdEnhancePlugin({
+      // 启用代码块分组
+      codetabs: true,
+    }),
+  ],
 
   bundler: viteBundler(),
 })

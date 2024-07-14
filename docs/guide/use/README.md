@@ -1,8 +1,21 @@
 ## 安装依赖
 
-```js
-npm i el-table-jsx @vitejs/plugin-vue-jsx
+::: code-tabs#shell
+
+@tab:active npm
+
+```bash
+npm i -D el-table-jsx @vitejs/plugin-vue-jsx
 ```
+
+@tab yarn
+
+```bash
+yarn add -D el-table-jsx @vitejs/plugin-vue-jsx
+```
+
+:::
+
 
 ## vite.config.js 引入插件
 
