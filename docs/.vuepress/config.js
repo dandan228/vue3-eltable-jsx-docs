@@ -23,10 +23,10 @@ export default defineUserConfig({
     ],
     sidebar: {
       "/guide/": [
-        {
-          text: '为什么用el-table-jsx',
-          link: 'reason/README.md',
-        },
+        // {
+        //   text: '为什么用el-table-jsx',
+        //   link: 'reason/README.md',
+        // },
         {
           text: '使用方法',
           link: 'use/README.md',
@@ -69,6 +69,8 @@ export default defineUserConfig({
       }
     }
   }),
+
+  plugins: ['demo-container-v2'],
 
   bundler: viteBundler(),
 })

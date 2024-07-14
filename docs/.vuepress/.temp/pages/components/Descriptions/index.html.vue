@@ -1,4 +1,67 @@
-<template><div><h2 id="事件" tabindex="-1"><a class="header-anchor" href="#事件"><span>事件</span></a></h2>
+<template><div><h2 id="基础使用" tabindex="-1"><a class="header-anchor" href="#基础使用"><span>基础使用</span></a></h2>
+<p><img src="@source/../assets/Descriptions.png" alt="示例图片"></p>
+<div class="language-javascript line-numbers-mode" data-highlighter="prismjs" data-ext="js" data-title="js"><pre v-pre class="language-javascript"><code><span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> defineComponent <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"vue"</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> Descriptions <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"el-table-jsx"</span><span class="token punctuation">;</span></span>
+<span class="line"><span class="token keyword">import</span> <span class="token punctuation">{</span> QuestionFilled <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">"@element-plus/icons-vue"</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"><span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token function">defineComponent</span><span class="token punctuation">(</span><span class="token punctuation">{</span></span>
+<span class="line">  <span class="token function">setup</span><span class="token punctuation">(</span><span class="token parameter">props<span class="token punctuation">,</span> <span class="token punctuation">{</span> emit <span class="token punctuation">}</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span></span>
+<span class="line">    <span class="token keyword">const</span> <span class="token function-variable function">desRightClick</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">item</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">{</span></span>
+<span class="line">      console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">"desRightClick"</span><span class="token punctuation">,</span> item<span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">    <span class="token punctuation">}</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line">    <span class="token keyword">return</span> <span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=></span> <span class="token punctuation">(</span></span>
+<span class="line">      <span class="token operator">&lt;</span>Descriptions</span>
+<span class="line">        title<span class="token operator">=</span><span class="token punctuation">{</span><span class="token string">"描述信息"</span><span class="token punctuation">}</span></span>
+<span class="line">        width<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">500</span><span class="token punctuation">}</span></span>
+<span class="line">        desInfo<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">{</span></span>
+<span class="line">          <span class="token literal-property property">title</span><span class="token operator">:</span> <span class="token string">"概要消息"</span><span class="token punctuation">,</span></span>
+<span class="line">          <span class="token literal-property property">desArr</span><span class="token operator">:</span> <span class="token punctuation">[</span></span>
+<span class="line">            <span class="token punctuation">{</span></span>
+<span class="line">              <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">"提示"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token literal-property property">val</span><span class="token operator">:</span> <span class="token string">"1"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token literal-property property">btn</span><span class="token operator">:</span> <span class="token punctuation">{</span></span>
+<span class="line">                <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">"primary"</span><span class="token punctuation">,</span></span>
+<span class="line">                <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span>
+<span class="line">                <span class="token literal-property property">txt</span><span class="token operator">:</span> <span class="token string">"修改"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token literal-property property">tooltipInfo</span><span class="token operator">:</span> <span class="token punctuation">{</span></span>
+<span class="line">                <span class="token literal-property property">icon</span><span class="token operator">:</span> QuestionFilled<span class="token punctuation">,</span></span>
+<span class="line">                <span class="token literal-property property">content</span><span class="token operator">:</span> <span class="token string">"提示"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">{</span></span>
+<span class="line">              <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">"提示"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token literal-property property">val</span><span class="token operator">:</span> <span class="token string">"2"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token literal-property property">btn</span><span class="token operator">:</span> <span class="token punctuation">{</span></span>
+<span class="line">                <span class="token literal-property property">type</span><span class="token operator">:</span> <span class="token string">"primary"</span><span class="token punctuation">,</span></span>
+<span class="line">                <span class="token literal-property property">link</span><span class="token operator">:</span> <span class="token boolean">true</span><span class="token punctuation">,</span></span>
+<span class="line">                <span class="token literal-property property">txt</span><span class="token operator">:</span> <span class="token string">"修改"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">{</span></span>
+<span class="line">              <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">"提示"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token literal-property property">val</span><span class="token operator">:</span> <span class="token string">"3"</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">{</span></span>
+<span class="line">              <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">"提示"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token literal-property property">val</span><span class="token operator">:</span> <span class="token string">"4"</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">{</span></span>
+<span class="line">              <span class="token literal-property property">label</span><span class="token operator">:</span> <span class="token string">"提示"</span><span class="token punctuation">,</span></span>
+<span class="line">              <span class="token literal-property property">val</span><span class="token operator">:</span> <span class="token string">"5"</span><span class="token punctuation">,</span></span>
+<span class="line">            <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line">          <span class="token punctuation">]</span><span class="token punctuation">,</span></span>
+<span class="line">        <span class="token punctuation">}</span><span class="token punctuation">}</span></span>
+<span class="line">        column<span class="token operator">=</span><span class="token punctuation">{</span><span class="token number">2</span><span class="token punctuation">}</span></span>
+<span class="line">        onDesRightClick<span class="token operator">=</span><span class="token punctuation">{</span>desRightClick<span class="token punctuation">}</span></span>
+<span class="line">      <span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>Descriptions<span class="token operator">></span></span>
+<span class="line">    <span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line">  <span class="token punctuation">}</span><span class="token punctuation">,</span></span>
+<span class="line"><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span></span>
+<span class="line"></span>
+<span class="line"></span></code></pre>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h2 id="事件" tabindex="-1"><a class="header-anchor" href="#事件"><span>事件</span></a></h2>
 <table>
 <thead>
 <tr>

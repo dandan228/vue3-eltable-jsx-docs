@@ -8,7 +8,7 @@
 <li>之前也封装了一个 table 组件，用的是 template 写法（<a href="https://" target="_blank" rel="noopener noreferrer">https://juejin.cn/post/7260783336217329724</a>），但是当需求越复杂，用 template 就不灵活</li>
 </ul>
 <h3 id="上预览图" tabindex="-1"><a class="header-anchor" href="#上预览图"><span>上预览图</span></a></h3>
-<!-- ![示例图片](/assets/image.png) -->
+<p><img src="@source/../assets/image.png" alt="示例图片"></p>
 <h3 id="目录机构" tabindex="-1"><a class="header-anchor" href="#目录机构"><span>目录机构</span></a></h3>
 <div class="language-text line-numbers-mode" data-highlighter="prismjs" data-ext="text" data-title="text"><pre v-pre class="language-text"><code><span class="line"> ├── src/</span>
 <span class="line"> │   ├── dist/</span>
@@ -27,7 +27,6 @@
 <span class="line"> │   └── App.jsx</span>
 <span class="line"></span>
 <span class="line"></span></code></pre>
-<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div><h3 id="重点看下config-js" tabindex="-1"><a class="header-anchor" href="#重点看下config-js"><span>重点看下<code v-pre>config.js</code></span></a></h3>
-<!-- ![示例图片](./public/info.png) --></div></template>
+<div class="line-numbers" aria-hidden="true" style="counter-reset:line-number 0"><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div><div class="line-number"></div></div></div></div></template>
 
 

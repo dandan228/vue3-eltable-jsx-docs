@@ -1,3 +1,21 @@
+## 基础使用
+
+![示例图片](../../../assets/Paginate.png)
+
+```js
+import { defineComponent } from "vue";
+import { MTable } from "el-table-jsx";
+
+export default defineComponent({
+  setup(props, { emit }) {
+    return () => (
+      <MTable pageInfo={{ pageSize: 10, pageNum: 1, total: 10 }}></MTable>
+    );
+  },
+});
+
+```
+
 ## 事件
 | 事件名 | 说明 | 出参 |
 |--------|------|------|

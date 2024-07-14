@@ -7,8 +7,8 @@
 - 后台大多数都是 table 表单，重复性的工作，根本提不起精神，就差睡着了
 - 之前也封装了一个 table 组件，用的是 template 写法（[https://juejin.cn/post/7260783336217329724](https://)），但是当需求越复杂，用 template 就不灵活
 
-### 上预览图，持续更新中
-<!-- ![示例图片](/assets/image.png) -->
+### 上预览图
+![示例图片](../../assets/image.png)
 
 ### 目录机构
 
@@ -30,6 +30,3 @@
  │   └── App.jsx
 
 ```
-
-### 重点看下`config.js`文件配置
-<!-- ![示例图片](./public/info.png) -->

@@ -30,6 +30,3 @@
  │   └── App.jsx
 
 ```
-
-### 重点看下`config.js`
-<!-- ![示例图片](./public/info.png) -->
