@@ -1,4 +1,6 @@
-<template><div><h2 id="为什么用el-table-jsx" tabindex="-1"><a class="header-anchor" href="#为什么用el-table-jsx"><span>为什么用<em>el-table-jsx</em></span></a></h2>
+<template><div><h2 id="文档地址" tabindex="-1"><a class="header-anchor" href="#文档地址"><span>文档地址</span></a></h2>
+<p>https://dandan228.github.io/vue3-eltable-jsx-docs/</p>
+<h2 id="为什么用el-table-jsx" tabindex="-1"><a class="header-anchor" href="#为什么用el-table-jsx"><span>为什么用<em>el-table-jsx</em></span></a></h2>
 <blockquote>
 <p>当后台模块都需重复开发时，利用基于 Vue 3 和 Element Plus 的<code v-pre>JSX</code>封装组件，您只需专注于配置，无需处理内部逻辑。无论是表格<code v-pre>table</code>、表单<code v-pre>form</code>，还是对话框<code v-pre>dialog</code>等组件，统一管理和快速开发都变得异常简便！</p>
 </blockquote>
