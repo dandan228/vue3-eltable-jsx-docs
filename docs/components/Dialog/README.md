@@ -1,4 +1,6 @@
 ## 基础使用
+> 注意：第二次打不开，需要手动添加事件（@closeDialog="state.passDialogVisible = false"）
+
 
 ![示例图片](../../../assets/Dialog.png)
 
