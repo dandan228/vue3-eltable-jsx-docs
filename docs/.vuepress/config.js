@@ -2,6 +2,8 @@ import { defaultTheme } from '@vuepress/theme-default'
 import { defineUserConfig } from 'vuepress/cli'
 import { viteBundler } from '@vuepress/bundler-vite'
 import { mdEnhancePlugin } from "vuepress-plugin-md-enhance";
+import { codeBlockPlugin } from "@yanyu-fe/vuepress-plugin-code-block";
+import vueJsx from "@vitejs/plugin-vue-jsx";
 
 
 export default defineUserConfig({
@@ -77,7 +79,12 @@ export default defineUserConfig({
       // 启用代码块分组
       codetabs: true,
     }),
+    codeBlockPlugin()
   ],
 
-  bundler: viteBundler(),
+  bundler: viteBundler({
+    viteOptions: {
+      plugins: [vueJsx()],
+    },
+  }),
 })

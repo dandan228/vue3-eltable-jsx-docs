@@ -6,6 +6,9 @@
 
 ## 基础使用
 
+
+<demo src="./index.vue" title="" desc=""></demo>
+<!-- 
 ![示例图片](../../../assets/MTable.png)
 
 ```js
@@ -77,7 +80,7 @@ export default defineComponent({
   },
 });
 
-```
+``` -->
 
 ## 事件
 
