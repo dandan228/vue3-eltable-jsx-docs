@@ -86,9 +86,6 @@ export default defineUserConfig({
   bundler: viteBundler({
     viteOptions: {
       plugins: [vueJsx()],
-      resolve: {
-        extensions: ['.js', '.jsx', '.vue', '.json'],
-      },
     },
   }),
 })
