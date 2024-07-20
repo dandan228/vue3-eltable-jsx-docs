@@ -79,12 +79,16 @@ export default defineUserConfig({
       // 启用代码块分组
       codetabs: true,
     }),
-    codeBlockPlugin()
+    codeBlockPlugin(),
+    vueJsx(),
   ],
 
   bundler: viteBundler({
     viteOptions: {
       plugins: [vueJsx()],
+      resolve: {
+        extensions: ['.js', '.jsx', '.vue', '.json'],
+      },
     },
   }),
 })

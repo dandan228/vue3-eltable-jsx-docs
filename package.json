@@ -21,7 +21,7 @@
     "vuepress-theme-hope": "^2.0.0-rc.51"
   },
   "dependencies": {
-    "el-table-jsx": "^0.5.0",
+    "el-table-jsx": "^0.5.5",
     "element-plus": "^2.7.7",
     "markdown-it-disable-url-encode": "^1.0.1"
   }
